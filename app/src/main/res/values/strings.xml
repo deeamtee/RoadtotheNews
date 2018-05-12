@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Road to the News</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Новости спорта</string>
+    <string name="nav_header_subtitle">Сегодня</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="frag1_text">Fragment 1</string>
+    <string name="frag2_text">Fragment 2</string>
+    <string name="log">Log</string>
+    <string name="find">Find</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sport_news">SPORT NEWS</string>
+    <string name="life_news">LIFE NEWS</string>
+    <string name="empty" />
+    <string name="LOOOOOOOOOL">lol</string>
+    <string name="kukumber">KUKUMBER</string>
+</resources>
