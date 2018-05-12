@@ -71,12 +71,12 @@ public class FootballFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_football, container, false);
-        Button button = (Button) v.findViewById(R.id.button);
+        /*Button button = (Button) v.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.d(LOG_TAG, "Button click in Fragment2");
             }
-        });
+        });*/
 
         return v;
     }

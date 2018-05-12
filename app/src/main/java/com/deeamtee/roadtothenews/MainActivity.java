@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*listView = (ListView) findViewById(R.id.listView);
+        listView = (ListView) findViewById(R.id.listView);
         textView = (TextView) findViewById(R.id.textView);
 
         ParseTitle parseTitle = new ParseTitle();
@@ -88,10 +88,10 @@ public class MainActivity extends AppCompatActivity
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
-        }*/
+        }
 
         // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-     //   setSupportActionBar(toolbar);
+        //   setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -117,8 +117,8 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-       /* listView.setVisibility(View.VISIBLE);
-        textView.setVisibility(View.GONE);*/
+        listView.setVisibility(View.VISIBLE);
+        textView.setVisibility(View.GONE);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-/*class ParseText extends AsyncTask<String,Void, String>{
+class ParseText extends AsyncTask<String,Void, String>{
 
     @Override
     protected String doInBackground(String... params) {
@@ -206,6 +206,6 @@ public class MainActivity extends AppCompatActivity
             }
             return hashMap;
         }
-    }*/
+    }
 
 }
