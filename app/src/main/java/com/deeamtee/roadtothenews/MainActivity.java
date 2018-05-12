@@ -170,22 +170,22 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-class ParseText extends AsyncTask<String,Void, String>{
+class ParseText extends AsyncTask<String, Void, String>{
 
     @Override
-    protected String doInBackground(String... params) {
+    protected String doInBackground(String... strings) {
         String str = " ";
         try {
-            Document document = Jsoup.connect(params[0]).get();
-            Element element = document.select(".js-mediator-article").first();
+            Document document = Jsoup.connect(strings[0]).get();
+            Element element = document.select(".itemFullText").first();
             str = element.text();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         return str;
     }
+
 }
 
     class ParseTitle extends AsyncTask<Void, Void, HashMap<String, String>> {
@@ -195,8 +195,8 @@ class ParseText extends AsyncTask<String,Void, String>{
             HashMap<String, String> hashMap = new HashMap<>();
 
             try {
-                Document document = Jsoup.connect("https://news.sportbox.ru").get();
-                Elements elements = document.select(".important");
+                Document document = Jsoup.connect("http://www.ndu.edu.ua/index.php/ua/vsi-novuni").get();
+                Elements elements = document.select(".catItemTitle");
                 for (Element element : elements){
                     Element element1 = element.select("a[href]").first();
                     hashMap.put(element.text(), element.attr("abs:href"));
@@ -206,6 +206,7 @@ class ParseText extends AsyncTask<String,Void, String>{
             }
             return hashMap;
         }
+
     }
 
 }
